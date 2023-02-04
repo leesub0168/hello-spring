@@ -1,12 +1,14 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 // 테스트는 순서가 보장이 되지않음. 메소드는 순서에 의존적으로 설계하면 안됨
 class MemoryMemberRepositoryTest {
